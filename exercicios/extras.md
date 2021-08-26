@@ -607,7 +607,7 @@ $ kubectl get deployment php-apache
 
 Estes são os itens que ao sentar na cadeira de devops, nós iremos fazer um checklist e verificar TODOS:
 
-* Máquinas estão online no virtualizador ou na nuvem?
+* Máquinas estão online no virtualizador ou na nuvem?	
 * RancherServer está online e acessível?
 * Cluster's kubernetes estão todos online e com seus nodes funcionando?
 * Monitoramento dos clusters está habilitado e funcionando?
@@ -635,13 +635,22 @@ CASO todos os itens acima tenham sido revisados e estejam OK, dai então podemos
 * Meu cluster não sobe
 	* Verificar portas abertas
 	* Verificar logs dos containers nos nós
-	* DNS, propagação de domínio
+	* DNS, propagação de domínio	
 * Minha aplicação na sobe
+	Deployment. 
+	Pod 
+	Log dos pods	
 * Os nós do cluster não se comunicam
+	Porta
 * Meu pod está online, mas minha aplicação não
+	Revisar o service e ingress
 * Não consigo acessar minha aplicação
+	Porta
+	Tags
+	Seletores
 * Onde vejo os logs
-* Onde vejo o monitormento?
+	Graylog
+* Onde vejo o monitormento?	
 * Onde acompanho os deployment's?
 * Pipeline com problema, como resolvo?
 
